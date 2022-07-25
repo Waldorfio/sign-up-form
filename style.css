@@ -10,13 +10,13 @@
 
 #container {
     display: flex;
-    flex-flow: column wrap;
+    /* flex-flow: column wrap; */
 }
     #banner-container {
         display: flex;
         flex-flow: row wrap;
-
-        width: 40%
+        width: 30%;
+        min-height: 100vh;
     }
         .banner {
             width: 100%;
@@ -32,6 +32,9 @@
             display: flex;
             flex-flow: row wrap;
             width: 100%;
+            justify-content: center;
+
+            margin-top: auto;       /* Combining this with parent "min-height: 100vh" makes footer always at bottom of screen
         }
 
     #rhs-container {
