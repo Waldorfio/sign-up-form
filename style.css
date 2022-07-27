@@ -9,17 +9,22 @@
 }
 
 #container {
-    display: flex;
+    /* display: flex; */
     /* flex-flow: column wrap; */
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 30% 30% 30%;
 }
     #banner-container {
-        display: flex;
+        /* display: flex;
         flex-flow: row wrap;
         width: 30%;
-        min-height: 100vh;
+        min-height: 100vh; */
+
+        /* display: grid; */
     }
         .banner {
-            width: 100%;
+            /* width: 100%; */
 
             color: white;
             text-align: center;
@@ -29,21 +34,23 @@
             opacity: 0.2;
         }
         .footer {
-            display: flex;
+            /* display: flex;
             flex-flow: row wrap;
             width: 100%;
             justify-content: center;
 
-            margin-top: auto;       /* Combining this with parent "min-height: 100vh" makes footer always at bottom of screen
+            margin-top: auto;       /* Combining this with parent "min-height: 100vh" makes footer always at bottom of screen */
+
+
         }
 
     #rhs-container {
         /* display: flex; */
-        width: 70%;
+        /* width: 70%; */
     }
 
 
-.body-text {
+.body-text { 
     font-weight: bold;
 }
 
