@@ -47,22 +47,19 @@
         }
 
     #rhs-container {
-        /* display: flex; */
-        /* width: 70%; */
         display: grid;
+        grid-template-columns: 100%;
+
     }
         .body-text { 
-            padding-top: 15%;
-            padding-left: 5%;
-            padding-right: 20%;
-            padding-bottom: 5%;
+            padding: 15% 20% 5% 5%;
 
             font-weight: bold;
             background-color: lightyellow;
         }
         .form-class {
-            padding-top: 5%;
-            padding-left: 5%;
-            padding-right: 20%;
-            padding-bottom: 5%;
+            padding: 5% 20% 5% 5%;
+        }
+        .log-in {
+            background-color: antiquewhite;
         }
