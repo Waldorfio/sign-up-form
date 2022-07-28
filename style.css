@@ -8,16 +8,22 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body,html {
+    margin: 0;
+    padding: 0;
+}
+
 #container {
     display: grid;
-    grid-template-columns: 30% 70%;
-    height: 100vh;
+    grid-template-columns: 1fr 2fr;
+    height: calc(100vh - 3px);
 }
     #banner-container {
         display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 20% 10% 70%;
-        height: 100vh;
+        /* grid-template-columns: 100%; */
+        /* grid-template-rows: 20% 10% 70%; */
+        grid-template-rows: 2fr 1fr 7fr;
+        /* height: 100%; */
     }
         .banner {
             color: white;
@@ -35,9 +41,10 @@
 
     #rhs-container {
         display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 33% 33% 33%;
-        height: 100vh;
+        /* grid-template-columns: 100%; */
+        /* grid-template-rows: 33% 33% 33%; */
+        grid-template-rows: repeat(3, 1fr);
+        /* height: 100vh; */
     }
         .body-text { 
             padding: 60px 60px 30px 30px;
