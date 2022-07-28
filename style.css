@@ -7,8 +7,7 @@
 * {
     font-family: 'Roboto', sans-serif;
 }
-
-body,html {
+body,html {         /* Fixes issue of scrollbar appearing */
     margin: 0;
     padding: 0;
 }
@@ -20,10 +19,7 @@ body,html {
 }
     #banner-container {
         display: grid;
-        /* grid-template-columns: 100%; */
-        /* grid-template-rows: 20% 10% 70%; */
         grid-template-rows: 2fr 1fr 7fr;
-        /* height: 100%; */
     }
         .banner {
             color: white;
@@ -41,10 +37,7 @@ body,html {
 
     #rhs-container {
         display: grid;
-        /* grid-template-columns: 100%; */
-        /* grid-template-rows: 33% 33% 33%; */
         grid-template-rows: repeat(3, 1fr);
-        /* height: 100vh; */
     }
         .body-text { 
             padding: 60px 60px 30px 30px;
