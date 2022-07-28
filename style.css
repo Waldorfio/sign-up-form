@@ -19,26 +19,21 @@ body,html {         /* Fixes issue of scrollbar appearing */
 }
     #banner-container {
         display: grid;
-        /* grid-template-columns: 20px 20px;
-        grid-template-rows: 20px 20px 20px; */
-        grid-template-columns: 1fr 2fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr 1fr 4fr;
         background-image: url("banner.jpg");
     }
 
         .banner {
             display: grid;
             grid-column: 1/3;
-            grid-template-columns: 1fr 2fr;
+            grid-template-columns: 1fr 1fr;
 
-            background-color: rgba(0, 0, 0, 0.4);
-            /* grid-template-columns: 20px 20px;
-            grid-template-rows: 20px 20px 20px; */
-            /* grid-template-columns: 1fr 2fr;
-            grid-template-rows: 1fr 1fr 4fr; */
+            background-color: rgba(0, 0, 0, 0.4);       /* use rgba so opacity doesent interfere with text */
         }
             .banner-text {
-                /* align-self: center; */
+                align-self: center;
+                justify-self: start;
 
                 color: white;
                 text-align: center;
@@ -47,7 +42,8 @@ body,html {         /* Fixes issue of scrollbar appearing */
                 opacity: 1.0;
             }
             .banner-logo {
-                /* align-self: center; */
+                align-self: center;
+                justify-self: end;
 
                 width: 90px;
                 height: auto;
