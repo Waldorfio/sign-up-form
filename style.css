@@ -80,14 +80,40 @@ body,html {         /* Fixes issue of scrollbar appearing */
             font-weight: bold;
         }
         .form-class {
-            padding: 20px 60px 30px 30px;
+            display: grid;
+            
+            padding: 20px 60px 40px 40px;
 
             border-top: 2px solid azure;
         }
             .form-class > legend {
                 font-size: 24px;
                 font-weight: bold;
-            }
+            }            
+                .form-container {
+                    display: grid;
+                    grid-template-columns: 0.5fr 1fr;
+                    grid-template-rows: repeat(3, 1fr);
+                    gap: 30px;
+
+                    /* justify-content: start;
+                    align-content: start; */
+                }
+                    .card {
+                        display: grid;
+                        grid-template-rows: 1fr 1fr;
+                    }
+                    .card > input {
+                        height: 120%;
+                        width: 300px;
+                        border-radius: 5px;
+                    }
+                    .card > label {
+                        color: rgb(31,41,55);
+                        font-weight: bold;
+                        text-transform: capitalize;
+                        font-size: 13px;
+                    }
         .log-in {
             display: grid;
             grid-template-rows: 1fr 3fr;
