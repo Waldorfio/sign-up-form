@@ -72,6 +72,19 @@ body,html {         /* Fixes issue of scrollbar appearing */
             background-color:azure;
         }
         .log-in {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 1fr 3fr;
+
             padding: 20px 60px 30px 30px;
+
             background-color: antiquewhite;
         }
+            .create-account {
+                grid-column: 1/2;
+                grid-row: 1/2;
+            }
+            .already {
+                grid-column: 1/2;
+                grid-row: 2/3;
+            }
