@@ -107,7 +107,23 @@ body,html {         /* Fixes issue of scrollbar appearing */
                         height: 120%;
                         width: 300px;
                         border-radius: 5px;
+
+                        outline: none !important;
+                        border: solid 2px rgb(229,231,235);
                     }
+                    input:focus {
+                        outline: none !important;
+                        border: 1px solid blue;
+                        box-shadow: 0 0 10px #719ECE;
+                    }
+                    input:focus:valid {
+                        border-color: lightgreen;
+                    }
+                    input:focus:invalid {
+                        border-color: red;
+                    }
+
+
                     .card > label {
                         color: rgb(31,41,55);
                         font-weight: bold;
